@@ -17,3 +17,10 @@ Otherwise, I have an automated build on Docker Hub that you can use,
 
     docker run -it -p 6800:6800 a5huynh/scrapyd
 
+
+### Deploying the tutorial spider to `scrapyd`
+
+First, make sure the IP address to the container is correct in the `scrapy.cfg`
+file. Then you can deploy the spider to the `scrapyd` container using,
+
+    scrapyd-deploy docker -p tutorial
