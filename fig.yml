@@ -15,7 +15,7 @@ data:
 # scrapyd application server
 #-------------------------------------------------------------------------------
 
-scrapyd:
+server:
   build: .
   ports:
     - "6800:6800"
