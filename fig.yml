@@ -1,0 +1,23 @@
+#-------------------------------------------------------------------------------
+# Persistent data container
+#   - See http://scrapyd.readthedocs.org/en/latest/install.html for more info
+#     on each of the directories.
+#-------------------------------------------------------------------------------
+
+data:
+  image: busybox
+  volumes:
+    - /etc/scrapyd
+    - /var/lib/scrapyd
+    - /var/log/scrapyd
+
+#-------------------------------------------------------------------------------
+# scrapyd application server
+#-------------------------------------------------------------------------------
+
+scrapyd:
+  build: .
+  ports:
+    - "6800:6800"
+  volumes_from:
+    - data
