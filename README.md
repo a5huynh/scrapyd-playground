@@ -3,10 +3,10 @@
 
 I created this repository to quickly get started with scrapy and scrapyd. I've
 included a Dockerfile to build a container with everything required to run a
-scrapyd instance with image pipeline capabilities.
+scrapyd instance.
 
-I've also included a really simple tutorial spider that can be sent to the
-scrapyd instance to crawl stuff.
+Also included is the tutorial spider as an example of how to deploy spiders,
+and as an added bonus, I created a spider that has image pipeline capabilities!
 
 
 ### Quickstart with [Fig.sh](http://fig.sh/)
