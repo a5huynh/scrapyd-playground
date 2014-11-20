@@ -13,3 +13,12 @@ class TutorialItem(scrapy.Item):
     title = scrapy.Field()
     link  = scrapy.Field()
     desc  = scrapy.Field()
+
+
+class CoverArtItem( scrapy.Item ):
+    ''' Represents an album art cover '''
+    title  = scrapy.Field()
+    artist = scrapy.Field()
+
+    image_urls = scrapy.Field()
+    images     = scrapy.Field()
