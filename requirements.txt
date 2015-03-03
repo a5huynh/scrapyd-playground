@@ -1,6 +1,7 @@
 Pillow==2.6.1
 Scrapy==0.24.4
 Twisted==14.0.2
+boto==2.36.0
 cffi==0.8.6
 characteristic==14.2.0
 cryptography==0.6.1
